@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html ng-app="quiz">
+<head>
+  <title>Análisis y modelado de sistemas de software</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- angular, jquery, bootstrap-->
+  <script type="text/javascript" src="resources/libs/angular-1.5.8/angular.min.js"></script>
+  <script type="text/javascript" src="resources/libs/angular-1.5.8/angular-route.min.js"></script>
+  <script type="text/javascript" src="resources/libs/angular-bind-html-compile.min.js"></script>
+  <script type="text/javascript" src="resources/libs/angular-1.5.8/angular-messages.min.js"></script>
+
+  <script type="text/javascript" src="resources/libs/xml2json.min.js"></script>
+
+  <script src="resources/libs/jquery-3.1.0/jquery-3.1.0.min.js"></script>
+
+  <link rel="stylesheet" href="resources/libs/bootstrap-3.3.7/css/bootstrap.min.css">
+  <script src="resources/libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- js-->
+  <script src="resources/js/app.js"></script>
+  <script src="resources/js/home_controller.js"></script>
+  <script src="resources/js/quiz_controller.js"></script>
+  <script src="resources/js/quiz_results_controller.js"></script>
+
+  <!-- mathjax -->
+  <script src="resources/libs/ng-mathjax/ng-mathjax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+  });
+</script>
+
+<!--awesome-font -->
+<link rel="stylesheet" href="resources/libs/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<!-- styles-->
+<link rel="stylesheet" href="resources/css/fonts.css">
+<link rel="stylesheet" href="resources/css/index.css">
+<link rel="stylesheet" href="resources/css/home.css">
+<link rel="stylesheet" href="resources/css/quiz.css">
+<link rel="stylesheet" href="resources/css/quiz_results.css">
+
+</head>
+
+<body>
+
+  <div id="lv_quiz_template" class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10" ng-include="current_template"></div>
+
+</body>
+
+</html>

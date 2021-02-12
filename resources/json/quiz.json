@@ -1,0 +1,127 @@
+{
+  "quiz": {
+    "title": "Análisis y modelado de software",
+    "random_mode": 0,
+    "questions_to_show": 4,
+
+    "questions":{
+      "question": [
+        {
+          "type": "RadioButton",
+          "instruction": "Selecciona la respuesta correcta.",
+          "text": "Es el lenguaje estándar más utilizado por los profesionistas de software para el análisis y modelado de sistemas",
+          "options":
+          {
+            "option":
+            [
+              {"text":"Correcta 1", "html":"Lenguaje UML","feedback":"¡Excelente!."},
+              {"text":"Nunc 2", "html":"Diagramas de flujo", "feedback":"Los diagramas de flujo son formas simples de describir enfoques estructurados."},
+              {"text":"Sed 3", "html":"Diseño basado en el dominio", "feedback":"El diseño basado en el dominio es un enfoque de desarrollo de software."}
+            ]
+          },
+          "correct_answer":"Correcta 1"
+        },
+        {
+          "type": "CheckBox",
+          "instruction": "Selecciona las respuestas correctas.",
+          "text": "Selecciona los beneficios del análisis y modelado de software (selecciona todas las que apliquen)",
+          "options":
+          {
+            "option":
+            [
+              {"text":"kicad", "html":"Reducción de tiempos", "truth":1, "feedback":"Muy bien."},
+              {"text":"AutoCAD", "html":"Limitación en la generación automática de códigos", "truth":0, "feedback":"El modelado potencializa la generación automática de códigos."},
+              {"text":"FreeCAD", "html":"Curva de aprendizaje lenta", "truth":0, "feedback":"Esto representa una crítica."},
+              {"text":"TinyCAD", "html":"Entender y comunicar soluciones", "truth":1, "feedback":"Excelente."}
+            ]
+          }
+        },
+        {
+          "type":"DropDownList",
+          "instruction":"Selecciona la palabra correcta.",
+          "text":"El _ es la etapa del desarrollo de software que consiste en crear abstracciones de los sistemas antes de comenzar a codificarlos.",
+          "options":
+          {
+            "option":
+            [
+              {"text":"modelado", "feedback":"Muy bien."},
+              {"text":"análisis", "feedback":"Esta etapa consiste en identificar los errores en el diseño."}
+            ]
+          },
+          "correct_answer":"modelado"
+        },
+        {
+          "type": "ImageRadioButton",
+          "instruction": "Selecciona la imagen correcta.",
+          "text": "En los diagramas UML, las clases y objetos se representan con el elemento gráfico:",
+          "options":
+          {
+            "option":
+            [
+              {"src":"resources/imgs/quiz/img1.png", "feedback":"Excelente."},
+              {"src":"resources/imgs/quiz/img2.png", "feedback":"Este elemento representa representa un caso de uso."},
+              {"src":"resources/imgs/quiz/img3.png", "feedback":"Este elemento representa un paquete."},
+              {"src":"resources/imgs/quiz/img4.png", "feedback":"Este elemento puede representar un estado o actividad."}
+            ]
+          },
+          "correct_answer":"resources/imgs/quiz/img1.png"
+        },
+
+
+
+
+
+        {
+          "type": "VideoRadioButton",
+          "instruction": "Vea el video y seleccione la respuesta a la pregunta.",
+          "text": "¿Quis leo luctus sed a tortor porttitor 7?",
+          "url": "https://www.youtube.com/embed/kPDnw3_1GOI",
+          "options":
+          {
+            "option":
+            [
+              {"text":"Correcta 1", "html":"<b>Correcta</b> 1","feedback":"Retroalimentación para la opción 1"},
+              {"text":"Lorem 2", "html":"Lorem <sup>2</sup>", "feedback":"Retroalimentación para la opción 2"},
+              {"text":"Sed 3", "html":"<span style=\"color:red;\">Sed</span> <span style=\"color:blue;\">3</span>", "feedback":"Retroalimentación para la opción 3"},
+              {"text":"Risus 4", "html":"Risus <sub>4</sub>", "feedback":"Retroalimentación para la opción 4"}
+            ]
+          },
+          "correct_answer":"Correcta 1"
+        },
+        {
+          "type":"VideoDropDownList",
+          "instruction":"Vea el video y seleccione la respuesta a la pregunta.",
+          "text":"Purus vel ultricies _ rutrum, arcu libero congue lacus. 8",
+          "url": "https://www.youtube.com/embed/kPDnw3_1GOI",
+          "options":
+          {
+            "option":
+            [
+              {"text":"Correcta 1", "feedback":"Retroalimentación para la opción 1"},
+              {"text":"Lorem 2", "feedback":"Retroalimentación para la opción 2"},
+              {"text":"Commodo 3", "feedback":"Retroalimentación para la opción 3"},
+              {"text":"Interdum 4", "feedback":"Retroalimentación para la opción 4"}
+            ]
+          },
+          "correct_answer":"Correcta 1"
+        },
+        {
+          "type": "VideoCheckBox",
+          "instruction": "Vea el video y seleccione la respuesta a la pregunta.",
+          "text": "¿Ut scelerisque, elit at ornare dapibus, erat risus suscipit erat 9?",
+          "url": "https://www.youtube.com/embed/kPDnw3_1GOI",
+          "options":
+          {
+            "option":
+            [
+              {"text":"Correcta 1", "html":"<b>Correcta</b> 1", "truth":1, "feedback":"Retroalimentación para la opción 1"},
+              {"text":"Phasellus 2", "html":"Phasellus <sup>2</sup>", "truth":0, "feedback":"Retroalimentación para la opción 2"},
+              {"text":"Scelerisque 3", "html":"Scelerisque 3", "truth":0, "feedback":"Retroalimentación para la opción 3"},
+              {"text":"Correcta 4", "html":"<span style=\"color:red;\">Correcta</span> <span style=\"color:green;\">4</span>", "truth":1, "feedback":"Retroalimentación para la opción 4"}
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

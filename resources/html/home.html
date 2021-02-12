@@ -1,0 +1,19 @@
+<div class="row lv_row" ng-controller="HomeController as Home">
+
+  <div class="row lv_row text-center lv_title_home">
+    <b>{{credits_data.title}}</b>
+  </div>
+
+  <div class="row lv_row lv_body_home">
+    <div class="credits" bind-html-compile="credits" ng-show="!isCreditHidden"></div>
+    <button ng-show="isCreditHidden" type="button" ng-click="startQuiz();">INICIAR</button>
+  </div>
+
+  <div class="row lv_row text-center lv_footer_home">
+    <img src="resources/imgs/home/ug.png" alt="Universidad de Guanajuato">
+    <img src="resources/imgs/home/codaes.png" alt="CODAES">
+    <button id="credits_button" type="button" class="pull-right" name="button" ng-click="showCredits();" ng-show="isCreditHidden"><i class="fa fa-info-circle fa-3x"></i></button>
+    <button id="close_button" type="button" class="pull-right" name="button" ng-click="showCredits();" ng-show="!isCreditHidden"><i class="fa fa-times-circle fa-3x"></i></button>
+  </div>
+
+</div>

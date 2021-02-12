@@ -1,0 +1,112 @@
+.lv_results_container{
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.lv_results_information_container{
+  margin: 0;
+  padding: 40px 40px 5px 40px;
+  font-size: 18px !important;
+  border-top: 1px solid #A9A9A9;
+}
+
+.lv_text_results{
+  color: black;
+  font-size: 18px !important;
+}
+
+#lv_heading_results button{
+  font-size: 18px !important;
+  background-color: #f5f5f5 !important;
+  outline: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.lv_results_table{
+  background-color: white;
+}
+
+.lv_results_table>thead{
+  background-color: white;/*#eeeeee;*/
+  color: black;
+}
+
+.lv_correct_answer{
+  color: white;
+  background: rgb(79, 138, 16);
+  background: rgba(79, 138, 16, 0.4);
+  font-size: 27px;
+}
+
+.lv_wrong_answer{
+  color: white;
+  background: rgb(215, 0, 12);
+  background: rgba(215, 0, 12, 0.4);
+  font-size: 27px;
+}
+
+#lv_collapse_results > div{
+  background-color: white;/*#f5f5f5;*/
+}
+
+.lv_btn_try_again{
+  padding: 0 40px 30px 40px;
+}
+
+.lv_btn_try_again>button, .lv_btn_try_again>button:focus{
+  font-size: 18px !important;
+  color: black;
+  background-color: #D3D3D3;
+}
+
+.lv_btn_try_again>button:hover{
+  color: black;
+  background-color:  	#A9A9A9;
+}
+
+
+
+
+.modal{
+  font-family: 'RalewayRegular';
+  font-size: 18px !important;
+  color: black !important;
+}
+
+.lv_modal_header{
+  background-color: white;
+  border-bottom: 1px solid #A9A9A9;
+}
+
+.lv_modal_footer{
+  /*border-top: 5px solid #003057;*/
+}
+.lv_modal_footer>button{
+  background-color: white /*#e6e7e9;*/
+  color: black !important;
+  font-size: 18px !important;
+}
+
+.lv_modal_title{
+  color: black !important;
+  font-size: 18px !important;
+  font-family: 'NovecentoWideBold';
+}
+
+.lv_modal_body{
+  color: black !important;
+  font-size: 18px !important;
+  /*color: #003057 !important;*/
+}
+
+.lv_close_feedback, .lv_close_feedback:hover{
+  background-color: #D3D3D3 !important;
+  height: 35px;
+  width: 35px;
+  color:black !important;
+  font-size: 32px;
+  opacity: 1 !important;
+}

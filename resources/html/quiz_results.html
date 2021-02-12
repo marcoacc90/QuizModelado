@@ -1,0 +1,87 @@
+<div class="row lv_row" ng-controller="QuizResultsController as Results">
+  <div class="lv_results_container">
+
+    <table style="width:100%;">
+      <tr>
+        <td class="text-center lv_title_quiz" style="width:100%; vertical-align:middle; padding:24px 0;">
+          <b>RESULTADOS</b>
+        </td>
+      </tr>
+    </table>
+
+
+    <div class="lv_results_information_container">
+      <div class="lv_text_results text-center">
+        Respuestas correctas: {{number_correct_answers}} / {{number_questions}}
+      </div>
+      <br>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="lv_heading_results">
+          <!-- <h4 class="panel-title"> -->
+            <button class="btn btn-md btn-block" type="button" data-toggle="collapse" data-target="#lv_collapse_results" aria-expanded="false" aria-controls="lv_collapse_results" style="white-space: normal !important;" ng-click="showQuestionsResults();">
+              <b>{{title_accordion}}</b>
+            </button>
+          <!-- </h4> -->
+        </div>
+        <div id="lv_collapse_results" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lv_heading_results">
+          <div class="panel-body">
+            <div id="lv_table_wrap" style="max-height: 250px; overflow-x: auto; overflow-y: scroll;">
+              <table class="table table-bordered table-condensed lv_results_table">
+                <thead>
+                  <tr>
+                    <th class="text-center">Pregunta</th>
+                    <th colspan="3" class="text-center">Respuesta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="resQuestion{{$index}}" ng-repeat="q in quiz.question">
+
+                    <td class="text-justify" style="vertical-align: middle;" bind-html-compile="q.html_text_result"></td>
+
+                    <td class="text-center" style="vertical-align: middle; padding-left: 5px; padding-right: 5px; margin: 0px;" ng-class="{lv_correct_answer: true=={{q.is_correct_answer}}, lv_wrong_answer: false=={{q.is_correct_answer}}}">
+                      <span ng-show="q.is_correct_answer" class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                      <span ng-show="!q.is_correct_answer" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </td>
+
+                    <td class="text-justify" style="vertical-align: middle;" bind-html-compile="q.html_text_options_result"></td>
+
+                    <td style="padding: 0px; margin: 0px;">
+                      <button type="button" id="feedbackButton{{$index}}" class="btn btn-default" style="background-color:#D3D3D3;" data-toggle="modal" data-target="#modalFeedback" ng-click="showQuestionFeedback(q.html_feedback);" ng-show="q.html_feedback!==''">
+                        <i class="fa fa-comments fa-2x" style="color:white;"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lv_btn_try_again">
+        <button class="btn btn-md pull-right" style="white-space: normal !important;" ng-click="TryAgain();"><b>Realizar de nuevo</b></button>
+    </div>
+
+
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalFeedback" tabindex="-1" role="dialog">
+    <br><br><br><br>
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header lv_modal_header">
+          <button type="button" class="close lv_close_feedback" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title text-center lv_modal_title" id="myModalLabel">Retroalimentación</h3>
+        </div>
+        <div class="modal-body lv_modal_body text-justify" style="max-height:250px; overflow:auto;" bind-html-compile="feedback"></div>
+        <!-- <div class="lv_modal_footer">
+          <button type="button" class="btn btn-default btn-block" data-dismiss="modal"><h4>Cerrar</h4></button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+</div>

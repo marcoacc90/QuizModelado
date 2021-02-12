@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'NovecentoWideBold';
+   src: url("../fonts/Novecentowide-Bold.eot");
+   src: url("../fonts/Novecentowide-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Novecentowide-Bold.woff") format("woff"),
+        url("../fonts/Novecentowide-Bold.ttf") format("truetype"),
+        url("../fonts/Novecentowide-Bold.svg#IDdelafuente") format("svg");
+}
+
+@font-face {
+    font-family: 'NovecentoWideMedium';
+   src: url("../fonts/Novecentowide-Medium.eot");
+   src: url("../fonts/Novecentowide-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Novecentowide-Medium.woff") format("woff"),
+        url("../fonts/Novecentowide-Medium.ttf") format("truetype"),
+        url("../fonts/Novecentowide-Medium.svg#IDdelafuente") format("svg");
+}
+
+@font-face {
+    font-family: 'RalewayRegular';
+   src: url("../fonts/Raleway-Regular.eot");
+   src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Raleway-Regular.woff") format("woff"),
+        url("../fonts/Raleway-Regular.ttf") format("truetype"),
+        url("../fonts/Raleway-Regular.svg#IDdelafuente") format("svg");
+}

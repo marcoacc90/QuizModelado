@@ -1,0 +1,43 @@
+body{
+  font-family: 'RalewayRegular';
+}
+
+.flex-parent{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-child{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lv_row{
+  margin: 0;
+}
+
+#close_button{
+  background-color: transparent;
+  border:none;
+  color: #e6e7e9;
+}
+
+#lv_quiz_template{
+   /* controrno*/
+  /*border: 6px solid #e6e7e9;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+*/
+  /*background-color: #FFFFFF;*/
+  /*background-color: #003057;*/
+  padding: 0;
+}
+
+.MathJax_CHTML {
+    font-size: 20px !important;
+}

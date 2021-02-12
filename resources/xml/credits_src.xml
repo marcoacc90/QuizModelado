@@ -1,0 +1,139 @@
+<!--
+  - Al escribir los créditos dentro de la aplicación
+  utilice los títulos y subtítulos que aparecen
+  comentados en este documento.
+
+  - Se deben de actualizar la instituciones participantes
+  de acuerdo a las personas involucradas en la aplicación.
+
+  - Las condiciones de uso se mantienen en todas las aplicaciones.
+
+  - Se deben actualizar los participantes de acuerdo a las
+  personas involucradas en cada aplicación.
+
+  - El formato del participante es:
+  Nombre, acrónimo de la institución
+  Correo
+
+  - Se debe de incluir una etiqueta a los tipos de participantes que
+  no estén contemplados en este documento, respetando el formato de los
+  participantes.
+
+  - Los participantes en la gestión del proyecto se mantienen.
+
+  - Se debe registrar el material externo: audio, video, imágenes, modelos, etc.
+  Respetando la especificación del autor de dicho material.
+
+  - Se mantiene la leyenda con el financiamiento.
+-->
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<credit>
+  <title>TÍTULO DEL CUESTIONARIO</title>
+
+  <institutions>
+    <university>UNIVERSIDAD DE GUANAJUATO</university>
+    <institution>
+      <name>División de Ingenierías del Campus Irapuato-Salamanca</name>
+      <acronym>DICIS</acronym>
+    </institution>
+    <institution>
+      <name>Dirección de Asuntos Académicos</name>
+      <acronym>DAA</acronym>
+    </institution>
+    <institution>
+      <name>Laboratorio de Visión, Robótica e Inteligencia Artificial</name>
+      <acronym>LaViRIA</acronym>
+    </institution>
+  </institutions>
+
+  <!-- CONDICIONES DE USO -->
+  <terms>
+    <legend>No se permite el uso comercial de la obra original
+      ni la generación de obras derivadas</legend>
+    <year>2016</year>
+  </terms>
+
+  <!-- CRÉDITOS -->
+  <participants>
+    <!-- Contenido -->
+    <content>
+      <!-- <name>Eva Edilia Ávila Muro</name>
+      <institution>DCNE</institution>
+      <email>edilia@ugto.mx</email> -->
+    </content>
+
+    <!-- Desarrollo -->
+    <developer>
+      <name>Marco Antonio Contreras Cruz</name>
+      <institution>LaViRIA</institution>
+      <email>macc@laviria.org</email>
+    </developer>
+    <developer>
+      <name>Javier Santoyo Morales</name>
+      <institution>LaViRIA</institution>
+      <email>jsm@laviria.org</email>
+    </developer>
+    <developer>
+      <name>Víctor Ayala Ramírez</name>
+      <institution>DICIS</institution>
+      <email>ayalav@ugto.mx</email>
+    </developer>
+
+    <!-- Ilustración -->
+    <ilustration>
+      <!-- <name></name>
+      <institution></institution>
+      <email></email> -->
+    </ilustration>
+
+    <!-- Modelado 3d -->
+    <model3D>
+      <!-- <name></name>
+      <institution></institution>
+      <email></email> -->
+    </model3D>
+
+    <!-- Gestión del proyecto -->
+    <manager>
+      <name>Gabriel Córdova Duarte</name>
+      <institution>DAA</institution>
+      <email>g.cordova@ugto.mx</email>
+    </manager>
+    <manager>
+      <name>Raquel de la Luz Calzada Olmos</name>
+      <institution>DAA</institution>
+      <email>calzadaro@ugto.mx</email>
+    </manager>
+
+  </participants>
+
+  <!-- MATERIAL EXTERNO -->
+  <materials>
+    <material>
+      <!-- <type>Imagen</type>
+      <description></description> -->
+    </material>
+
+    <!-- <material>
+      <type>Modelo 3D</type>
+      <description></description>
+    </material>
+
+    <material>
+      <type>Sonido</type>
+      <description></description>
+    </material> -->
+  </materials>
+
+  <!-- FINANCIAMIENTO -->
+  <funding>
+    <legend> Proyecto realizado con el financiamiento de la
+      Secretaría de Educación Pública,
+      Secretaría de Educación Superior,
+      Dirección General de Educación Superior Universitaria
+      Convenio 2016-11-001-013
+     </legend>
+  </funding>
+
+</credit>
